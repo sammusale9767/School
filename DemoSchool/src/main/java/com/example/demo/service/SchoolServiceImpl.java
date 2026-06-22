@@ -3,10 +3,12 @@ package com.example.demo.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.demo.model.School;
 import com.example.demo.repository.SchoolRepository;
 
+@Service
 public class SchoolServiceImpl implements SchoolService {
 
 	@Autowired
@@ -14,7 +16,6 @@ public class SchoolServiceImpl implements SchoolService {
 	@Override
 	public void add(School s) {
 		// TODO Auto-generated method stub
-		
 		rs.save(s);
 
 	}
